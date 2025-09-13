@@ -6,8 +6,15 @@ body {
     justify-content: center;
     min-height: 100vh;
     background-color: #f0f0f0;
+
+    /* Perbarui kode ini */
+    background-image: url('nama-gambar-anda.jpg'); /* Ganti dengan nama file gambar Anda */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
+/* Kode .triangle-container dan .circle tetap sama */
 .triangle-container {
     position: relative;
     width: 300px;
@@ -31,10 +38,9 @@ body {
     border: 2px solid #388E3C;
 }
 
-/* Posisi lingkaran sesuai dengan tata letak piramida */
-.circle:nth-child(1) { top: 0; left: 50%; transform: translateX(-50%); } /* Atas */
-.circle:nth-child(2) { top: 33%; left: 25%; transform: translateX(-50%); } /* Tengah kiri */
-.circle:nth-child(3) { top: 33%; left: 75%; transform: translateX(-50%); } /* Tengah kanan */
-.circle:nth-child(4) { top: 66%; left: 0; transform: translateX(-50%); } /* Bawah kiri */
-.circle:nth-child(5) { top: 66%; left: 50%; transform: translateX(-50%); } /* Bawah tengah */
-.circle:nth-child(6) { top: 66%; left: 100%; transform: translateX(-50%); } /* Bawah kanan */
+.circle:nth-child(1) { top: 0; left: 50%; transform: translateX(-50%); } 
+.circle:nth-child(2) { top: 33%; left: 25%; transform: translateX(-50%); } 
+.circle:nth-child(3) { top: 33%; left: 75%; transform: translateX(-50%); } 
+.circle:nth-child(4) { top: 66%; left: 0; transform: translateX(-50%); } 
+.circle:nth-child(5) { top: 66%; left: 50%; transform: translateX(-50%); } 
+.circle:nth-child(6) { top: 66%; left: 100%; transform: translateX(-50%); }
