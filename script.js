@@ -26,10 +26,18 @@ function checkSum() {
         return;
     }
 
-    // Hitung jumlah setiap sisi
-    const side1 = values[0] + values[1] + values[2]; // Sisi atas
-    const side2 = values[0] + values[3] + values[4]; // Sisi kiri
-    const side3 = values[2] + values[5] + values[4]; // Sisi kanan
+    // Hitung jumlah setiap sisi berdasarkan tata letak baru
+    // Urutan values[]:
+    // 0: Sudut atas
+    // 1: Tengah sisi kiri
+    // 2: Tengah sisi kanan
+    // 3: Sudut kiri bawah
+    // 4: Sudut kanan bawah
+    // 5: Tengah sisi bawah
+
+    const side1 = values[0] + values[1] + values[3]; // Sisi kiri: Atas, tengah-kiri, kiri-bawah
+    const side2 = values[0] + values[2] + values[4]; // Sisi kanan: Atas, tengah-kanan, kanan-bawah
+    const side3 = values[3] + values[5] + values[4]; // Sisi bawah: Kiri-bawah, tengah-bawah, kanan-bawah
 
     const resultDiv = document.getElementById('result');
 
