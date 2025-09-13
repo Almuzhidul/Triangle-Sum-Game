@@ -31,10 +31,10 @@ body {
     border: 2px solid #388E3C;
 }
 
-/* Posisi setiap lingkaran */
-.circle:nth-child(1) { top: 0; left: 50%; transform: translateX(-50%); }
-.circle:nth-child(2) { top: 50%; left: 0; transform: translateY(-50%); }
-.circle:nth-child(3) { top: 50%; right: 0; transform: translateY(-50%); }
-.circle:nth-child(4) { bottom: 0; left: 25%; }
-.circle:nth-child(5) { bottom: 0; right: 25%; }
-.circle:nth-child(6) { bottom: 0; left: 50%; transform: translateX(-50%); }
+/* Posisi lingkaran sesuai dengan gambar */
+.circle:nth-child(1) { top: 0; left: 50%; transform: translate(-50%, -50%); } /* Sudut atas */
+.circle:nth-child(2) { top: 25%; left: calc(12.5% + 5px); transform: translate(-50%, -50%); } /* Tengah sisi kiri */
+.circle:nth-child(3) { top: 25%; right: calc(12.5% + 5px); transform: translate(50%, -50%); } /* Tengah sisi kanan */
+.circle:nth-child(4) { bottom: 0; left: 0; transform: translate(-50%, -50%); } /* Sudut kiri bawah */
+.circle:nth-child(5) { bottom: 0; right: 0; transform: translate(50%, -50%); } /* Sudut kanan bawah */
+.circle:nth-child(6) { bottom: 0; left: 50%; transform: translate(-50%, -50%); } /* Tengah sisi bawah */
