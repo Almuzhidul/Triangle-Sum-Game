@@ -7,14 +7,14 @@ body {
     min-height: 100vh;
     background-color: #f0f0f0;
 
-    /* Perbarui kode ini */
-    background-image: url('nama-gambar-anda.jpg'); /* Ganti dengan nama file gambar Anda */
+    /* Perbarui kode ini dengan URL yang Anda berikan */
+    background-image: url('https://raw.githubusercontent.com/Almuzhidul/Triangle-Sum-Game/main/latar-belakang.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
-/* Kode .triangle-container dan .circle tetap sama */
+/* Kode .triangle-container dan .circle lainnya tetap sama */
 .triangle-container {
     position: relative;
     width: 300px;
