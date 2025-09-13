@@ -26,18 +26,18 @@ function checkSum() {
         return;
     }
 
-    // Hitung jumlah setiap sisi berdasarkan tata letak baru
+    // Hitung jumlah setiap sisi berdasarkan tata letak piramida
     // Urutan values[]:
-    // 0: Sudut atas
-    // 1: Tengah sisi kiri
-    // 2: Tengah sisi kanan
-    // 3: Sudut kiri bawah
-    // 4: Sudut kanan bawah
-    // 5: Tengah sisi bawah
+    // 0: Atas
+    // 1: Tengah-kiri
+    // 2: Tengah-kanan
+    // 3: Bawah-kiri
+    // 4: Bawah-tengah
+    // 5: Bawah-kanan
 
-    const side1 = values[0] + values[1] + values[3]; // Sisi kiri: Atas, tengah-kiri, kiri-bawah
-    const side2 = values[0] + values[2] + values[4]; // Sisi kanan: Atas, tengah-kanan, kanan-bawah
-    const side3 = values[3] + values[5] + values[4]; // Sisi bawah: Kiri-bawah, tengah-bawah, kanan-bawah
+    const side1 = values[0] + values[1] + values[3]; // Sisi kiri: Atas, tengah-kiri, bawah-kiri
+    const side2 = values[0] + values[2] + values[5]; // Sisi kanan: Atas, tengah-kanan, bawah-kanan
+    const side3 = values[3] + values[4] + values[5]; // Sisi bawah: Bawah-kiri, bawah-tengah, bawah-kanan
 
     const resultDiv = document.getElementById('result');
 
