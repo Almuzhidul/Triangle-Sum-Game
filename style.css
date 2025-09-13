@@ -7,7 +7,7 @@ body {
     min-height: 100vh;
     background-color: #f0f0f0;
 
-    background-image: url('latar-belakang1.png');
+    background-image: url('background.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
